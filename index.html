@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="calc">
+      <input type="text" name="display" id="display" readonly placeholder="0">
+      <div class="buttons">
+        <section>
+          <button onclick="clearAll()">AC</button>
+          <button onclick="getOperator('+')">+</button>
+        </section>
+        <section>
+          <button onclick="getItem(7)">7</button>
+          <button onclick="getItem(8)">8</button>
+          <button onclick="getItem(9)">9</button>
+          <button onclick="getOperator('-')">–</button>
+        </section>
+        <section>
+          <button onclick="getItem(4)">4</button>
+          <button onclick="getItem(5)">5</button>
+          <button onclick="getItem(6)">6</button>
+          <button onclick="getOperator('*')">×</button>
+        </section>
+        <section>
+          <button onclick="getItem(1)">1</button>
+          <button onclick="getItem(2)">2</button>
+          <button onclick="getItem(3)">3</button>
+          <button onclick="getOperator('/')">÷</button>
+        </section>
+        <section>
+          <button onclick="getItem('.')">.</button>
+          <button onclick="getItem(0)">0</button>
+          <button onclick="calculate()">=</button>
+        </section>
+      </div>
+    </div>
+    <p><a target="_blank" href="https://www.nordtheme.com/docs/colors-and-palettes">Nord theme</a> by Arctic Ice Studio & Sven Greb</p>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
